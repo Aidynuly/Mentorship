@@ -1,0 +1,57 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:textViewStyle">@style/Custom.TextView</item>
+        <item name="bottomNavigationStyle">@style/Custom.BottomNavigationView</item>
+        <item name="textAppearanceButton">@style/Custom.Button.TextAppearance</item>
+        <item name="shapeAppearanceSmallComponent">@style/Custom.ShapeAppearance.Normal</item>
+    </style>
+    
+    <style name="Custom.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/lato_regular</item>
+    </style>
+
+    <style name="Custom.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/Custom.BottomNavigationView.Colors</item>
+    </style>
+
+    <style name="Custom.BottomNavigationView.Colors" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="Custom.Button.IconOnly" parent="Widget.MaterialComponents.Button">
+        <item name="iconPadding">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:minWidth">16dp</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="shapeAppearance">@style/Custom.ShapeAppearance.Small</item>
+    </style>
+
+    <style name="Custom.Button.Corners.Small" parent="Widget.MaterialComponents.Button">
+        <item name="shapeAppearance">@style/Custom.ShapeAppearance.Small</item>
+    </style>
+
+    <style name="Custom.Button.TextAppearance" parent="TextAppearance.MaterialComponents.Button">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:fontFamily">@font/lato_bold</item>
+    </style>
+
+    <style name="Custom.ShapeAppearance.Normal" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">@dimen/corner_radius_normal</item>
+    </style>
+
+    <style name="Custom.ShapeAppearance.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">@dimen/corner_radius_small</item>
+    </style>
+
+</resources>
